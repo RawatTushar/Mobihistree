@@ -8,8 +8,9 @@ import Login from "./src/screens/Login";
 import Home from "./src/screens/Home";
 
 
+
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
-const scale = SCREEN_WIDTH / 390; // base width = 390
+const scale = SCREEN_WIDTH / 390; 
 
 function normalize(size) {
   const newSize = size * scale;
@@ -29,6 +30,7 @@ const Splash = ({ navigation }) => {
 
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "black" }}>
+      
 
       <LinearGradient
         colors={["#254D81", "#08101B"]}
@@ -47,18 +49,14 @@ const Splash = ({ navigation }) => {
         </View>
       </LinearGradient>
 
-      <View style={styles.footer}>
-        <View style={{ height: "50%", width: "50%", justifyContent: "center" }}>
-          <Text style={styles.footerText}>Powered By </Text>
-          <Text style={styles.footerText}>Triotree Technologies Pvt. Ltd.</Text>
-        </View>
-      </View>
+    
     </SafeAreaView>
   );
 };
 
 const App = () => {
   return (
+    
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
 
@@ -116,6 +114,7 @@ const styles = StyleSheet.create({
     fontWeight: "500",
     fontSize:normalize(12)
   },
+  
   linearGradient: {
     flex: 1,
     paddingLeft: 15,

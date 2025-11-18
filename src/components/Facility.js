@@ -44,6 +44,7 @@ const Facility = ({ visible, facilities, onClose, onSelect }) => {
 
 const styles = StyleSheet.create({
   modalOverlay: {
+    
     flex: 1,
     backgroundColor: "rgba(0,0,0,0.5)",
     justifyContent: "center",
@@ -52,10 +53,10 @@ const styles = StyleSheet.create({
   modalContent: {
     width: "90%",
     height: normalize(230),
-    marginBottom: normalize(55),
+    marginBottom: normalize(50),
     backgroundColor: "white",
     borderRadius: 10,
-    padding: normalize(15),
+    padding: normalize(10),
   },
   title: {
     color: "black",
