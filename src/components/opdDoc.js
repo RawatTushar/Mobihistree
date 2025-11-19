@@ -19,6 +19,7 @@ const OpdDoc = ({ word }) => {
     { label: "Dr. Mehta", value: "mehta" },
     { label: "Dr. Singh", value: "singh" },
     { label: "Dr. Rawat", value: "Rawat" },
+    { label: "Dr. Thakur", value: "Atharv" },
   ];
 
   return (
